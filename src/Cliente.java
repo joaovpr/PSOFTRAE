@@ -1,6 +1,6 @@
 
 //LAB 06 PSOFT
-// JOÂO VITOR PATRICIO ROMÂO - 118211058
+// JOÃO VITOR PATRICIO ROMÃO - 118211058
 
 
 
@@ -13,6 +13,8 @@
 //      SOLUÇÕES TOMADAS:
 
 //		-Codigo de chegar prazo foi tirado da responsabilidade de Gerente, agora o Propjeto que faz isso e o gerente apenas solicita.
+//      -Mudança de nome na variavel d ---> dias
+//      -criação de get e set para a variavel dias para melhorar o acesso a váriavel
 //
 
 
