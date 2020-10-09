@@ -13,6 +13,8 @@
 //      SOLUÇÕES TOMADAS:
 
 //		-Codigo de chegar prazo foi tirado da responsabilidade de Gerente, agora o Propjeto que faz isso e o gerente apenas solicita.
+//      -Mudança de nome na variavel d ---> dias
+//      -criação de get e set para a variavel dias para melhorar o acesso a váriavel
 //
 
 
@@ -24,7 +26,7 @@ public class Main {
 	    Projeto p = new Projeto();
 	    Cliente c = new Cliente();
 
-	    p.d = 89;
+	    p.setDias(89);
 
 	    System.out.println(g.checar(p));
     }
