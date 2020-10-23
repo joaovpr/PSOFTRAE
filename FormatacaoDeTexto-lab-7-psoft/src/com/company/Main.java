@@ -8,23 +8,22 @@ package com.company;
 
 import com.company.Formatacoes.TipoFormato;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        String txt = "Este eh um texto de exemplo";
+
+        Scanner sc = new Scanner(System.in);
         Publicar pub = new Publicar();
-
-        TipoFormato form1 = TipoFormato.valueOf("NEGRITO");
-        TipoFormato form2 = TipoFormato.valueOf("ITALICO");
-        TipoFormato form3 = TipoFormato.valueOf("MAIUSCULO");
-        TipoFormato form4 = TipoFormato.valueOf("MINUSCULO");
-
-
-        System.out.println(pub.fazerPublicacao(txt,form1.obterFormato()));
-        System.out.println(pub.fazerPublicacao(txt,form2.obterFormato()));
-        System.out.println(pub.fazerPublicacao(txt,form3.obterFormato()));
-        System.out.println(pub.fazerPublicacao(txt,form4.obterFormato()));
+        TipoFormato form;
+        String txt;
+        System.out.println("---Digite o seu texto:---");
+        txt = sc.nextLine();
+        System.out.println("---Selecione a formatação: (NEGRITO, ITALICO, MAIUSCULO ou MINUSCULO)---");
+        form = TipoFormato.valueOf(sc.nextLine());
+        System.out.println(pub.fazerPublicacao(txt,form.obterFormato()));
 
     }
 }
