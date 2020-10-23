@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        String txt = "Meu nome eh joao HAAHHA";
+        String txt = "Este eh um texto de exemplo";
         Publicar pub = new Publicar();
 
         TipoFormato form1 = TipoFormato.valueOf("NEGRITO");
