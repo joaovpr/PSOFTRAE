@@ -11,27 +11,16 @@ public class Mario {
 	public long pontuacao = 0;
 
 	public void pegarCogumelo() {
-		if (situacao.getSit() == 0) {
-			situacao = new Grande();
-		} else if (situacao.getSit() == 1  || situacao.getSit() == 2) {
-			pontuacao+=1000;
-		}
+		situacao.pegarCogumelo(this);
 	}
 	public void levarDano() throws Exception {
-		if (situacao.getSit() == 0) {
-			throw new Exception("Mario morreu.");
-		} else if (situacao.getSit() == 1) {
-			situacao = new Pequeno();
-		}else if (situacao.getSit() == 2) {
-			situacao = new Grande();
-		}
+		situacao.levarDano(this);
 	}
 	public void pegarFlor() {
-		if (situacao.getSit() == 0 || situacao.getSit() == 1) {
-			situacao = new FlorDeFogo();
-		} else if (situacao.getSit() == 2) {
-			pontuacao+=1000;
-		}
+	    situacao.pegarFlor(this);
 	}
 
+    public long getPontuacao() {
+        return pontuacao;
+    }
 }

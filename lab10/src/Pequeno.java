@@ -6,9 +6,8 @@
 
 
 public class Pequeno extends SituacaoMario {
-    public static final int MARIO_PEQUENO = 0;
 
-    public int getSit() {
-        return MARIO_PEQUENO;
-    }
+    public void pegarCogumelo(Mario m) {m.situacao = new Grande();}
+    public void levarDano(Mario m) throws Exception {throw new Exception("Mario morreu.");}
+    public void pegarFlor(Mario m) {m.situacao = new FlorDeFogo();}
 }

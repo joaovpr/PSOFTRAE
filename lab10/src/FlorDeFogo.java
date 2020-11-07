@@ -6,9 +6,8 @@
 
 
 public class FlorDeFogo extends SituacaoMario {
-    public static final int MARIO_FOGO = 2;
 
-    public int getSit() {
-        return MARIO_FOGO;
-    }
+    public void pegarCogumelo(Mario m) {m.pontuacao+=1000;}
+    public void levarDano(Mario m) {m.situacao = new Grande();}
+    public void pegarFlor(Mario m) {m.pontuacao+=1000;}
 }
