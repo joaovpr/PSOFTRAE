@@ -7,11 +7,15 @@
 
 
 
-public abstract class SituacaoMario {
+public class SituacaoMario {
 
-	//public static final int MARIO_PEQUENO = 0;
-	//public static final int MARIO_GRANDE = 1;
-	//public static final int MARIO_FOGO = 2;
+    //public static final int MARIO_PEQUENO = 0;
+    //public static final int MARIO_GRANDE = 1;
+    //public static final int MARIO_FOGO = 2;
 
-	public abstract int getSit();
+    public void pegarCogumelo(Mario m) {}
+    public void levarDano(Mario m) throws Exception {}
+    public void pegarFlor(Mario m) {}
+
+
 }

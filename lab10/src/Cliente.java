@@ -19,8 +19,8 @@ public class Cliente {
 			mario.levarDano();
 			mario.levarDano();
 
-		} catch (Exception e) {
 
+		} catch (Exception e) {
 			System.out.println("Acabou o jogo");
 		}
 
